@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>311 Complaints — Monthly (2025)</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>311 Complaints Over Time (Monthly, 2025)</h1>
+      <p class="subheader">Aggregated by month from <code>boston_311_2025_raw.csv</code> (uses the <code>open_dt</code> field)</p>
+    </header>
+
+    <section id="dashboard">
+      <div class="controls">
+        <label for="group-select">Group by:</label>
+        <select id="group-select">
+          <option value="month" selected>Month</option>
+        </select>
+      </div>
+
+      <div id="chart"></div>
+      <div id="note">Tip: serve this folder with a local server (e.g., <code>python -m http.server 8000</code>) so the CSV can be fetched.</div>
+    </section>
+  </main>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>
