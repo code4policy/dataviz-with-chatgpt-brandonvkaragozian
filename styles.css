@@ -1,0 +1,77 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  background: transparent;
+  color: #111;
+  margin: 24px;
+}
+
+header h1 {
+  margin: 0 0 6px 0;
+  font-size: 1.5rem;
+}
+
+.subheader {
+  margin: 0 0 8px 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.controls {
+  margin-bottom: 8px;
+}
+
+#toggle-btn {
+  background: #6a1b9a;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+#toggle-btn:hover { opacity: 0.95; }
+
+.y-label, .x-label {
+  fill: #333;
+  font-size: 12px;
+} 
+
+#chart-wrapper {
+  max-width: 1100px;
+  margin-top: 18px;
+}
+
+#chart {
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+#attribution {
+  font-size: 12px;
+  color: #666;
+  margin-top: 8px;
+}
+
+.tooltip {
+  background: rgba(0,0,0,0.75);
+  color: white;
+  padding: 8px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  line-height: 1.2;
+}
+
+svg text {
+  font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.2rem;
+  }
+  #chart {
+    padding: 8px;
+  }
+}
